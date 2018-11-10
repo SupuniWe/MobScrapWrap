@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.db.cdap.scrapwrap.game.MainMenuActivity"
+    android:background="@drawable/mainbackground">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="29dp"
+        android:text="SCRAP WRAP"
+        android:textAppearance="@style/TextAppearance.AppCompat.Title" />
+
+    <Button
+        android:id="@+id/btnMap"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/textView"
+        android:layout_marginTop="13dp"
+        android:text="MAP" />
+
+    <Button
+        android:id="@+id/btnCustomize"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/btnMap"
+        android:layout_below="@+id/btnMap"
+        android:layout_marginTop="19dp"
+        android:text="CUSTOMIZE" />
+
+    <Button
+        android:id="@+id/btnCommunity"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/btnCustomize"
+        android:layout_below="@+id/btnCustomize"
+        android:layout_marginTop="23dp"
+        android:text="COMMUNITY" />
+
+    <Button
+        android:id="@+id/btnStore"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/btnCommunity"
+        android:layout_below="@+id/btnCommunity"
+        android:layout_marginTop="24dp"
+        android:onClick="btnStore_OnClick"
+        android:text="STORE" />
+
+    <Button
+        android:id="@+id/btnHelp"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/btnStore"
+        android:layout_below="@+id/btnStore"
+        android:layout_marginTop="23dp"
+        android:text="HELP" />
+
+    <Button
+        android:id="@+id/btnLogout"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/btnHelp"
+        android:layout_below="@+id/btnHelp"
+        android:layout_marginTop="20dp"
+        android:text="LOG OUT" />
+</RelativeLayout>

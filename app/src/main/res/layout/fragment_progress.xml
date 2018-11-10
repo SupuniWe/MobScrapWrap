@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".community.ProgressFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+        android:id="@+id/community_user_profile_txtLastPlayed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="100dp"
+        android:text="Last Played:"
+        android:textColor="@android:color/black"
+        android:textSize="18dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/community_user_profile_txtLastPlayedVal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="240dp"
+        android:layout_marginTop="100dp"
+        android:textColor="@android:color/black"
+        android:text="2 hours ago"
+        android:textSize="18dp" />
+
+    <TextView
+        android:id="@+id/community_user_profile_txtHighestRwd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/community_user_profile_txtLastPlayed"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="20dp"
+        android:text="Highest Reward:"
+        android:textColor="@android:color/black"
+        android:textSize="18dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/community_user_profile_txtHighestRwdVal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="240dp"
+        android:layout_marginTop="140dp"
+        android:textColor="@android:color/black"
+        android:text="670"
+        android:textSize="18dp" />
+
+
+</RelativeLayout>

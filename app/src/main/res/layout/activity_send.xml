@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.db.cdap.scrapwrap.location.SendActivity">
+
+    <TextView
+        android:id="@+id/user_name_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:text="Send to .." />
+
+    <EditText
+        android:id="@+id/messageView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/user_name_view"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/input_plan_background"
+        android:ems="10"
+        android:fontFamily="@font/nunito_semibold"
+        android:hint="Enter notification message.."
+        android:inputType="textPersonName"
+        android:paddingBottom="15dp"
+        android:paddingLeft="25dp"
+        android:paddingRight="25dp" />
+
+    <Button
+        android:id="@+id/send_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/messageView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/primary_color_btn"
+        android:fontFamily="@font/nunito_semibold"
+        android:text="Send Notification"
+        android:textSize="15sp" />
+
+    <ProgressBar
+        android:id="@+id/messageProgressBar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:indeterminate="true"
+        android:visibility="invisible" />
+
+</RelativeLayout>

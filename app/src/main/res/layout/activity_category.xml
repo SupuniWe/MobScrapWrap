@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/mainpagebackground"
+    tools:context="com.db.cdap.scrapwrap.CategoryActivity">
+
+    <Button
+        android:id="@+id/btnAvatar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/border_button"
+        android:fontFamily="@font/nunito_extrabold"
+        android:text="Go to store"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/btnDetectObjects"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="150dp"
+        android:text="Detect Objects"
+        android:background="@drawable/border_button"
+        android:fontFamily="@font/nunito_extrabold"
+        android:textSize="18sp"/>
+
+    <Button
+        android:id="@+id/btnLocation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="250dp"
+        android:text="Go to Location"
+        android:background="@drawable/border_button"
+        android:fontFamily="@font/nunito_extrabold"
+        android:textSize="18sp"/>
+
+    <Button
+        android:id="@+id/btnCommunity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="350dp"
+        android:text="Community"
+        android:background="@drawable/border_button"
+        android:fontFamily="@font/nunito_extrabold"
+        android:textSize="18sp"/>
+
+    <Button
+        android:id="@+id/btnChatbot"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="450dp"
+        android:text="Chat Bot"
+        android:background="@drawable/border_button"
+        android:fontFamily="@font/nunito_extrabold"
+        android:textSize="18sp"/>
+
+</RelativeLayout>

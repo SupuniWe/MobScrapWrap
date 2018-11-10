@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.db.cdap.scrapwrap.location.ObjectsActivity">
+
+    <EditText
+        android:id="@+id/editTextObjName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/editTextObjLatitude"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="38dp"
+        android:hint="Name" />
+
+    <EditText
+        android:id="@+id/editTextObjLatitude"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/editTextObjLongitude"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="34dp"
+        android:hint="Latitude" />
+
+    <EditText
+        android:id="@+id/editTextObjLongitude"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:hint="Longitude" />
+
+    <EditText
+        android:id="@+id/editTextObjStatus"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btnObjSave"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="45dp"
+        android:hint="Status" />
+
+    <Button
+        android:id="@+id/btnObjSave"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="71dp"
+        android:text="Save" />
+
+</RelativeLayout>

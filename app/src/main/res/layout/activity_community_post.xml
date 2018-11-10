@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/mainpagebackground"
+
+    tools:context=".community.CommunityPostActivity">
+
+    <include
+        android:id="@+id/community_post_toolbar"
+        layout="@layout/community_app_bar_layout">
+
+    </include>
+
+    <ImageButton
+        android:id="@+id/community_btnChoosePost"
+        android:layout_width="308dp"
+        android:layout_height="282dp"
+        android:layout_centerInParent="true"
+        android:background="@android:color/background_light"
+        android:scaleType="fitCenter"
+        app:srcCompat="@drawable/addpost" />
+
+    <EditText
+        android:id="@+id/community_editTxt_post_desc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="53dp"
+        android:ems="10"
+        android:hint="Add a description..."
+        android:inputType="textMultiLine"
+        android:padding="15dp" />
+
+    <Button
+        android:id="@+id/community_btnPost"
+        android:layout_width="190dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:background="@color/colorPrimaryDark"
+        android:text="Post"
+        android:textColor="@android:color/background_light"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/community_btnCancel"
+        android:layout_width="189dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:background="@color/colorPrimaryDark"
+        android:text="Cancel"
+        android:textColor="@android:color/background_light"
+        android:textSize="18sp" />
+
+</RelativeLayout>

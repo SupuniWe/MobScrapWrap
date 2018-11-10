@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/user_relative_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".user.UserActivity">
+
+
+    <include
+        android:id="@+id/user_page_toolbar"
+        layout="@layout/community_app_bar_layout">
+    </include>
+
+    <LinearLayout
+        android:id="@+id/user_layout_game_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/user_page_toolbar"
+        android:layout_marginTop="25dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/user_txt_game_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Pick a name:"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="8dp"
+            android:textAlignment="textStart"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/black"/>
+
+        <EditText
+            android:id="@+id/user_edittxt_game_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginBottom="25dp"
+            android:ems="10"
+            android:hint="Your game name..."
+            android:padding="15dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/user_layout_security_ques1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/user_layout_game_name"
+        android:layout_marginTop="25dp"
+        android:orientation="vertical">
+
+        <Spinner
+            android:id="@+id/user_spinner_security_ques1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Pick a question..."
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="8dp"
+            android:textAlignment="textStart"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/black"/>
+
+        <EditText
+            android:id="@+id/user_edittxt_security_ans1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginBottom="25dp"
+            android:ems="10"
+            android:hint="Your answer..."
+            android:padding="15dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/user_layout_security_ques2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/user_layout_security_ques1"
+        android:layout_marginTop="25dp"
+        android:orientation="vertical">
+
+        <Spinner
+            android:id="@+id/user_spinner_security_ques2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Pick a question..."
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="8dp"
+            android:textAlignment="textStart"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/black"/>
+
+        <EditText
+            android:id="@+id/user_edittxt_security_ans2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginBottom="25dp"
+            android:ems="10"
+            android:hint="Your answer..."
+            android:padding="15dp" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/user_btnDone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Done"
+        android:layout_below="@+id/user_layout_security_ques2"
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="280dp"/>
+
+
+</RelativeLayout>
